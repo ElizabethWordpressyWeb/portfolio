@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="portfolio-css.css">
+</head>
+<body>
+    <div class="hero">
+        <img src="images/portada.png.png" alt="Eliza">
+        <div class="hero-content">
+            <div class="title">Elizabeth Web</div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#" class="nav-button">Inicio</a>
+                <a href="skills.html" class="nav-button">Skills</a>
+            
+                <a href="contacto.html" class="nav-button">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="about-section">
+            <h2>Sobre mi</h2>
+            
+            <p class="about-text">
+                ¡Hola! 👋 Soy una entusiasta del mundo digital que encontró su pasión en la intersección entre la tecnología y la conexión humana. Desde 2017, he convertido mi espacio de trabajo en una ventana al mundo, colaborando con clientes de diferentes rincones del planeta 🌎
+            </p>
+
+            <p class="about-text">
+                Soy una desarrolladora web apasionada por crear experiencias 
+                digitales únicas y funcionales.
+            </p>
+            
+            <p class="about-text">
+                <p class="about-text">
+                    Mi caja de herramientas incluye desde Adobe Dreamweaver 
+                    hasta Visual Studio Code, y me apasiona aprender y crecer 
+                    cada día en el desarrollo web. Mi verdadera especialidad
+                     es gestionar redes sociales y crear conexiones 
+                     significativas entre emprendedores y personas.
+                </p>
+            </p>
+            
+            <p class="about-text">
+                Lo que más me apasiona de mi trabajo es que cada día es 
+                una nueva aventura: por la mañana puedo estar optimizando 
+                un sitio web para un cliente en Europa, y por la tarde 
+                intercambiando ideas con un emprendedor de América Latina. 
+                La distancia es solo un número cuando se trata de crear 
+                algo extraordinario juntos.
+            </p>
+            
+            <p class="about-text">
+                Mi filosofía es simple: la tecnología debe acercar a las 
+                personas, no alejarlas. Por eso, cada proyecto que tomo es 
+                una oportunidad para crear conexiones significativas, 
+                sin importar cuántos kilómetros nos separen. ¿Listo para 
+                dar vida a tu próximo proyecto digital? ¡Conversemos! 🚀
+            </p>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav').classList.toggle('active');
+            const spans = document.querySelectorAll('.menu-toggle span');
+            spans.forEach(span => span.classList.toggle('active'));
+        }
+    </script>
+</body>
+</html>
